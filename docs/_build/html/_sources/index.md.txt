@@ -1,0 +1,34 @@
+# hey
+
+```{include} Recent Posts.md
+
+```
+
+
+{include}`type`
+
+
+## d
+
+```{toctree}
+:caption: 'Domains'
+:hidden:
+
+
+
+domains/Open Source Intelligence
+domains/Threat Intelligence
+
+```
+
+
+```{toctree}
+:caption: 'All Posts'
+:hidden:
+
+
+blog/2022-07-31-OSINT Intelligence Cycle*
+
+
+
+````
