@@ -23,6 +23,7 @@ Recent Blog Posts
 
    blog/2022-07-31-OSINT Intelligence Cycle/2022-07-31-OSINT Intelligence Cycle.md
    blog/2022-08-01-Business OSINT Tools/2022-08-01-Business OSINT Tools.md
+   blog/test
 
 .. toctree::
    :caption: Archives

@@ -1,93 +1,344 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OSINT Intelligence Cycle &mdash; Ada  documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/js/theme.js"></script>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>OSINT Intelligence Cycle &#8212; Ada  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Business OSINT Tools" href="../2022-08-01-Business%20OSINT%20Tools/2022-08-01-Business%20OSINT%20Tools.html" />
-    <link rel="prev" title="Threat Intelligence" href="../../domains/Threat%20Intelligence.html" /> 
-</head>
+    <link rel="prev" title="Threat Intelligence" href="../../domains/Threat%20Intelligence.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Ada
-            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Domains</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../domains/Open%20Source%20Intelligence.html">Open Source Intelligence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../domains/Threat%20Intelligence.html">Threat Intelligence</a></li>
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Ada  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Domains
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../domains/Open%20Source%20Intelligence.html">
+   Open Source Intelligence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../domains/Threat%20Intelligence.html">
+   Threat Intelligence
+  </a>
+ </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">All Posts</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">OSINT Intelligence Cycle</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#importance-of-developing-a-hypothesis">Importance of developing a hypothesis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#intelligence-cycle-steps">Intelligence cycle steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a></li>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  All Posts
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   OSINT Intelligence Cycle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2022-08-01-Business%20OSINT%20Tools/2022-08-01-Business%20OSINT%20Tools.html">
+   Business OSINT Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../test.html">
+   This is a test site
+  </a>
+ </li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2022-08-01-Business%20OSINT%20Tools/2022-08-01-Business%20OSINT%20Tools.html">Business OSINT Tools</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Archives</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../archives/2022.html">2022(2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../archives/2021.html">2021</a></li>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Archives
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../archives/2022.html">
+   2022(2)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../archives/2021.html">
+   2021
+  </a>
+ </li>
 </ul>
 
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
         </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Ada</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>OSINT Intelligence Cycle</li>
-
-  </ul>
-  <hr/>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/blog/2022-07-31-OSINT Intelligence Cycle/2022-07-31-OSINT Intelligence Cycle.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importance-of-developing-a-hypothesis">
+   Importance of developing a hypothesis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intelligence-cycle-steps">
+   Intelligence cycle steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>OSINT Intelligence Cycle</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importance-of-developing-a-hypothesis">
+   Importance of developing a hypothesis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intelligence-cycle-steps">
+   Intelligence cycle steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
   <span class="target" id="oc"><span id="osint-cycle"></span></span><section id="osint-intelligence-cycle">
-<h1>OSINT Intelligence Cycle<a class="headerlink" href="#osint-intelligence-cycle" title="Permalink to this headline"></a></h1>
+<h1>OSINT Intelligence Cycle<a class="headerlink" href="#osint-intelligence-cycle" title="Permalink to this headline">#</a></h1>
 <p>The intelligence cycle is a concept that depicts the act of converting or developing raw data and information into intelligence in a meaningful way.
 There are several techniques or methodologies for acquiring OSINT. However, the common structure we will cover in this blog article is one of the most recognized intelligence cycle methodologies. Before delving into each phase, we should discuss the significance of the hypotheses briefly.</p>
 <section id="importance-of-developing-a-hypothesis">
-<h2>Importance of developing a hypothesis<a class="headerlink" href="#importance-of-developing-a-hypothesis" title="Permalink to this headline"></a></h2>
+<h2>Importance of developing a hypothesis<a class="headerlink" href="#importance-of-developing-a-hypothesis" title="Permalink to this headline">#</a></h2>
 <p>Developing a hypothesis constitutes the most important part of the OSINT intelligence cycle. You should develop a hypothesis before beginning to gather data. Remember that to develop an effective hypothesis, you must extract the most significant information from the available data such as the following:</p>
 <ul class="simple">
 <li><p>What parties are involved?</p></li>
@@ -102,7 +353,7 @@ There are several techniques or methodologies for acquiring OSINT. However, the 
 <p>Now that we have talked about the importance of developing a hypothesis before starting the intelligence cycle, let’s have a look at which steps to follow.</p>
 </section>
 <section id="intelligence-cycle-steps">
-<h2>Intelligence cycle steps<a class="headerlink" href="#intelligence-cycle-steps" title="Permalink to this headline"></a></h2>
+<h2>Intelligence cycle steps<a class="headerlink" href="#intelligence-cycle-steps" title="Permalink to this headline">#</a></h2>
 <p>Let’s explore the steps in an intelligence cycle.</p>
 <p><strong>planning and direction</strong></p>
 <p>During the planning and direction phase, you typically define your study needs and describe the issues you hope to find answers to.</p>
@@ -116,7 +367,7 @@ There are several techniques or methodologies for acquiring OSINT. However, the 
 <p>This is the ultimate transmission of an analytical output for use by others. In the dissemination and integration phase, you share the final result/report with the firm that asked for it.</p>
 </section>
 <section id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline"></a></h2>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
 <p>By the end of the page, you have learned that you can benefit from the intelligence cycle to turn raw data into information and, ideally, actionable intelligence. Always remember to start by developing a hypothesis for your OSINT research.</p>
 <blockquote>
 <div><p><strong>Want to learn practical Open-Source Intelligence skills? Enrol in MCSI’s <a class="reference external" href="https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html">MOIS - Certified OSINT Expert Program</a></strong></p>
@@ -125,34 +376,50 @@ There are several techniques or methodologies for acquiring OSINT. However, the 
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../domains/Threat%20Intelligence.html" class="btn btn-neutral float-left" title="Threat Intelligence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../2022-08-01-Business%20OSINT%20Tools/2022-08-01-Business%20OSINT%20Tools.html" class="btn btn-neutral float-right" title="Business OSINT Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, AdaGT.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../../domains/Threat%20Intelligence.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Threat Intelligence</p>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+    <a class='right-next' id="next-link" href="../2022-08-01-Business%20OSINT%20Tools/2022-08-01-Business%20OSINT%20Tools.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Business OSINT Tools</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By AdaGT<br/>
+  
+      &copy; Copyright 2022, AdaGT.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
-</body>
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
 </html>

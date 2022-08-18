@@ -1,13 +1,11 @@
 
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+sys.setrecursionlimit(1500)
 
-# -- Path setup --------------------------------------------------------------
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
+
 #
 # import os
 # import sys
@@ -46,7 +44,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_book_theme"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -65,8 +63,7 @@ html_context = {
 html_show_sourcelink = False
 
 
-html_theme_options = {
-    'display_version': False}
+
 
 
 def setup(app):
