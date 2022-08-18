@@ -26,6 +26,7 @@ author = 'AdaGT'
 # ones.
 extensions = [
     "myst_parser",
+    
 
 
 ]
