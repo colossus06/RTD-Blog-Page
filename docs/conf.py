@@ -5,7 +5,6 @@ sys.path.insert(0, os.path.abspath('..'))
 sys.setrecursionlimit(1500)
 
 
-
 #
 # import os
 # import sys
@@ -26,7 +25,8 @@ author = 'AdaGT'
 # ones.
 extensions = [
     "myst_parser",
-    
+    "sphinx.ext.autodoc"
+
 
 
 ]
@@ -62,9 +62,6 @@ html_context = {
 }
 
 html_show_sourcelink = False
-
-
-
 
 
 def setup(app):
